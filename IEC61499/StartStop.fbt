@@ -49,6 +49,9 @@
       <ECTransition Source="REQ" Destination="START" Condition="1" x="329.4518" y="614.1766">
         <Attribute Name="Configuration.Transaction.BezierPoints" Value="69.96292,164.5927,98.68414,129.9956" />
       </ECTransition>
+      <ECTransition Source="START" Destination="INIT" Condition="INIT" x="889.5922" y="166.4703">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="203.2904,47.43437,244.0409,25.56138" />
+      </ECTransition>
     </ECC>
     <Algorithm Name="INIT" Comment="Initialization algorithm">
       <ST Text=";&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;" />

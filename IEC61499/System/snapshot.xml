@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <baseline xmlns:xsd="http://www.nxtControl.com/Snapshot" xmlns="http://tempuri.org/XMLSchema1.xsd">
-  <snapshot guid="{B150DF40-4481-441F-9240-02F4B025CADA}" compiler="Default" created="2022-05-19T10:38:23" base="{00000000-0000-0000-0000-000000000000}">
+  <snapshot guid="{D50A49BD-0D83-401F-B869-086C9AA143FD}" compiler="Default" created="2022-05-23T12:23:09" base="{00000000-0000-0000-0000-000000000000}">
     <DeployInformation Type="Working">
       <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
         <FileItem Name="Main#ADD_3514EB543E3A8D7A.bin" Library="IEC61499.exe" BuildSnapshot="{2999F390-7C80-477E-A46B-D3BCD303D47F}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
@@ -23,84 +23,13 @@
           <Modified>2022-05-18T19:24:13</Modified>
           <Hash>213B18BE320FD066C</Hash>
         </FileItem>
-        <FileItem Name="Main#StartStop.bin" Library="IEC61499.exe" BuildSnapshot="{B150DF40-4481-441F-9240-02F4B025CADA}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-19T10:38:07</Modified>
-          <Hash>267CDEE94D9E21A8</Hash>
+        <FileItem Name="Main#StartStop.bin" Library="IEC61499.exe" BuildSnapshot="{EFBACA6A-217B-41D1-836B-4510170A16C6}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-23T11:21:55</Modified>
+          <Hash>10C24D576C2EE5EF</Hash>
         </FileItem>
-        <FileItem Name="Main#StartStopEvents.bin" Library="IEC61499.exe" BuildSnapshot="{6F476AD3-0EF5-4038-A8AD-067D3BED48E7}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-19T10:26:17</Modified>
-          <Hash>18184EB0F50CAB9E8</Hash>
-        </FileItem>
-        <LibraryItem Name="Runtime.Base" Version="21.2.0.17" />
-        <LibraryItem Name="SE.AppBase" Version="21.2.0.9" />
-        <LibraryItem Name="SE.AppCommonProcess" Version="21.2.0.9" />
-        <LibraryItem Name="SE.AppConveying" Version="21.2.0.9" />
-        <LibraryItem Name="SE.AppLiquidFood" Version="21.2.0.9" />
-        <LibraryItem Name="SE.AppSequence" Version="21.2.0.9" />
-        <LibraryItem Name="SE.AppStateManagement" Version="21.2.0.9" />
-        <LibraryItem Name="SE.DPAC" Version="21.2.0.32" />
-        <LibraryItem Name="SE.FieldDevice" Version="21.2.0.30" />
-        <LibraryItem Name="SE.HwCommon" Version="21.2.0.17" />
-        <LibraryItem Name="SE.IoATV" Version="21.2.0.31" />
-        <LibraryItem Name="SE.IoNet" Version="21.2.0.3" />
-        <LibraryItem Name="SE.IoTMx" Version="21.2.0.19" />
-        <LibraryItem Name="SE.IoX80" Version="21.2.0.20" />
-        <LibraryItem Name="SE.ModbusGateway" Version="21.2.0.12" />
-        <LibraryItem Name="SE.Standard" Version="21.2.0.4" />
-        <LibraryItem Name="Standard.HMIExtensions" Version="21.2.0.1" />
-        <LibraryItem Name="Standard.IoEtherNetIP" Version="21.2.0.13" />
-        <LibraryItem Name="Standard.IoModbus" Version="21.2.0.17" />
-        <LibraryItem Name="Standard.IoModbusSlave" Version="21.2.0.16" />
-        <LibraryItem Name="Standard.OPCUAClient" Version="21.2.0.11" />
-        <LibraryItem Name="IEC61131.Standard" Version="21.2.0.1" />
-        <LibraryItem Name="SE.AppAsset" Version="21.2.0.9" />
-        <LibraryItem Name="SE.AppFunctional" Version="21.2.0.9" />
-        <DeviceItem ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" Hash="0315974CA691FCE" />
-      </FileGroup>
-      <Device Name="EcoRT_0" ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" xmlns="http://tempuri.org/DeploySnapshot.xsd">
-        <FileItem Name="Basics/Main#ADD_3514EB543E3A8D7A.bin" />
-        <FileItem Name="Basics/Main#ADD_1990CFD1468AAE4A6.bin" />
-        <FileItem Name="Basics/Main#StartStopEvents.bin" />
-        <FileItem Name="Basics/Main#StartStop.bin" />
-        <FileItem Name="Basics/SE.DPAC#DS_SELECTX_2536758B411A6CE51.bin" />
-        <FileItem Name="Composites/SE.DPAC#DPAC_FULLINIT.bin" />
-        <FileItem Name="Composites/SE.AppBase#plcStart.bin" />
-      </Device>
-    </DeployInformation>
-    <BootProjects>
-      <BootProject Name="EcoRT_0" ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" StudioVersion="IEC 61499 IDE, Matrix v21.2 g3568 0ee572a Sun Dec 12 23:08:25 2021" SvnVersion="" />
-    </BootProjects>
-  </snapshot>
-  <snapshot guid="{A35636A9-5E6E-44EE-87CF-E81A47DC9562}" compiler="Default" created="2022-05-19T11:50:12" base="{00000000-0000-0000-0000-000000000000}">
-    <DeployInformation Type="Working">
-      <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
-        <FileItem Name="Main#ADD_3514EB543E3A8D7A.bin" Library="IEC61499.exe" BuildSnapshot="{2999F390-7C80-477E-A46B-D3BCD303D47F}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-18T18:42:57</Modified>
-          <Hash>3514EB543E3A8D7A</Hash>
-        </FileItem>
-        <FileItem Name="Main#ADD_739E3FB559152FE.bin" Library="IEC61499.exe" BuildSnapshot="{2999F390-7C80-477E-A46B-D3BCD303D47F}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-18T18:42:57</Modified>
-          <Hash>739E3FB559152FE</Hash>
-        </FileItem>
-        <FileItem Name="Main#AdapterTest.bin" Library="IEC61499.exe" BuildSnapshot="{B041DB01-78F6-4102-B912-F2AA47C30955}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-18T18:55:46</Modified>
-          <Hash>183087493C3AD42A4</Hash>
-        </FileItem>
-        <FileItem Name="Main#ADD_1990CFD1468AAE4A6.bin" Library="IEC61499.exe" BuildSnapshot="{B041DB01-78F6-4102-B912-F2AA47C30955}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-18T18:55:46</Modified>
-          <Hash>1990CFD1468AAE4A6</Hash>
-        </FileItem>
-        <FileItem Name="Main#Composite1.bin" Library="IEC61499.exe" BuildSnapshot="{FAC141AD-8840-4C1A-8805-52010D1687FE}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-18T19:24:13</Modified>
-          <Hash>213B18BE320FD066C</Hash>
-        </FileItem>
-        <FileItem Name="Main#StartStop.bin" Library="IEC61499.exe" BuildSnapshot="{A8BAD213-5AE6-463C-84C1-12E85944225C}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-19T11:46:19</Modified>
-          <Hash>267CDEE94D9E21A8</Hash>
-        </FileItem>
-        <FileItem Name="Main#StartStopEvents.bin" Library="IEC61499.exe" BuildSnapshot="{A8BAD213-5AE6-463C-84C1-12E85944225C}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
-          <Modified>2022-05-19T11:49:59</Modified>
-          <Hash>2843435C1C599999</Hash>
+        <FileItem Name="Main#StartStopEvents.bin" Library="IEC61499.exe" BuildSnapshot="{EFBACA6A-217B-41D1-836B-4510170A16C6}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-23T11:21:55</Modified>
+          <Hash>210F716675AA83863</Hash>
         </FileItem>
         <LibraryItem Name="Runtime.Base" Version="21.2.0.17" />
         <LibraryItem Name="SE.AppBase" Version="21.2.0.9" />
@@ -129,12 +58,8 @@
         <DeviceItem ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" Hash="20E0DD711DB3ECE5" />
       </FileGroup>
       <Device Name="EcoRT_0" ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" xmlns="http://tempuri.org/DeploySnapshot.xsd">
-        <FileItem Name="Basics/Main#StartStopEvents.bin">
-          <Changed>true</Changed>
-        </FileItem>
-        <FileItem Name="Basics/Main#StartStop.bin">
-          <Changed>true</Changed>
-        </FileItem>
+        <FileItem Name="Basics/Main#StartStopEvents.bin" />
+        <FileItem Name="Basics/Main#StartStop.bin" />
         <FileItem Name="Basics/SE.DPAC#DS_SELECTX_2536758B411A6CE51.bin" />
         <FileItem Name="Composites/SE.DPAC#DPAC_FULLINIT.bin" />
         <FileItem Name="Composites/SE.AppBase#plcStart.bin" />
@@ -142,11 +67,92 @@
         <FileItem Name="Basics/Main#ADD_1990CFD1468AAE4A6.bin" />
       </Device>
     </DeployInformation>
+    <BootProjects>
+      <BootProject Name="EcoRT_0" ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" StudioVersion="IEC 61499 IDE, Matrix v21.2 g3568 0ee572a Sun Dec 12 23:08:25 2021" SvnVersion="" />
+    </BootProjects>
+  </snapshot>
+  <snapshot guid="{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}" compiler="Default" created="2022-05-23T12:49:06" base="{00000000-0000-0000-0000-000000000000}">
+    <DeployInformation Type="Working">
+      <FileGroup Name="FileList" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Main#ADD_3514EB543E3A8D7A.bin" Library="IEC61499.exe" BuildSnapshot="{2999F390-7C80-477E-A46B-D3BCD303D47F}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-18T18:42:57</Modified>
+          <Hash>3514EB543E3A8D7A</Hash>
+        </FileItem>
+        <FileItem Name="Main#ADD_739E3FB559152FE.bin" Library="IEC61499.exe" BuildSnapshot="{2999F390-7C80-477E-A46B-D3BCD303D47F}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-18T18:42:57</Modified>
+          <Hash>739E3FB559152FE</Hash>
+        </FileItem>
+        <FileItem Name="Main#AdapterTest.bin" Library="IEC61499.exe" BuildSnapshot="{B041DB01-78F6-4102-B912-F2AA47C30955}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-18T18:55:46</Modified>
+          <Hash>183087493C3AD42A4</Hash>
+        </FileItem>
+        <FileItem Name="Main#ADD_1990CFD1468AAE4A6.bin" Library="IEC61499.exe" BuildSnapshot="{B041DB01-78F6-4102-B912-F2AA47C30955}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-18T18:55:46</Modified>
+          <Hash>1990CFD1468AAE4A6</Hash>
+        </FileItem>
+        <FileItem Name="Main#Composite1.bin" Library="IEC61499.exe" BuildSnapshot="{FAC141AD-8840-4C1A-8805-52010D1687FE}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-18T19:24:13</Modified>
+          <Hash>213B18BE320FD066C</Hash>
+        </FileItem>
+        <FileItem Name="Main#StartStop.bin" Library="IEC61499.exe" BuildSnapshot="{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-23T12:49:04</Modified>
+          <Hash>96CFEFD6CE6071B</Hash>
+        </FileItem>
+        <FileItem Name="Main#StartStopEvents.bin" Library="IEC61499.exe" BuildSnapshot="{EFBACA6A-217B-41D1-836B-4510170A16C6}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-23T11:21:55</Modified>
+          <Hash>210F716675AA83863</Hash>
+        </FileItem>
+        <FileItem Name="Main#AND_88A3DD8EC65DD11C.bin" Library="IEC61499.exe" BuildSnapshot="{D50A49BD-0D83-401F-B869-086C9AA143FD}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-23T12:36:01</Modified>
+          <Hash>88A3DD8EC65DD11C</Hash>
+        </FileItem>
+        <FileItem Name="Main#ComposStartStop.bin" Library="IEC61499.exe" BuildSnapshot="{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}" BaseSnapshot="{00000000-0000-0000-0000-000000000000}">
+          <Modified>2022-05-23T12:49:04</Modified>
+          <Hash>122A3CA70A0334F17</Hash>
+        </FileItem>
+        <LibraryItem Name="Runtime.Base" Version="21.2.0.17" />
+        <LibraryItem Name="SE.AppBase" Version="21.2.0.9" />
+        <LibraryItem Name="SE.AppCommonProcess" Version="21.2.0.9" />
+        <LibraryItem Name="SE.AppConveying" Version="21.2.0.9" />
+        <LibraryItem Name="SE.AppLiquidFood" Version="21.2.0.9" />
+        <LibraryItem Name="SE.AppSequence" Version="21.2.0.9" />
+        <LibraryItem Name="SE.AppStateManagement" Version="21.2.0.9" />
+        <LibraryItem Name="SE.DPAC" Version="21.2.0.32" />
+        <LibraryItem Name="SE.FieldDevice" Version="21.2.0.30" />
+        <LibraryItem Name="SE.HwCommon" Version="21.2.0.17" />
+        <LibraryItem Name="SE.IoATV" Version="21.2.0.31" />
+        <LibraryItem Name="SE.IoNet" Version="21.2.0.3" />
+        <LibraryItem Name="SE.IoTMx" Version="21.2.0.19" />
+        <LibraryItem Name="SE.IoX80" Version="21.2.0.20" />
+        <LibraryItem Name="SE.ModbusGateway" Version="21.2.0.12" />
+        <LibraryItem Name="SE.Standard" Version="21.2.0.4" />
+        <LibraryItem Name="Standard.HMIExtensions" Version="21.2.0.1" />
+        <LibraryItem Name="Standard.IoEtherNetIP" Version="21.2.0.13" />
+        <LibraryItem Name="Standard.IoModbus" Version="21.2.0.17" />
+        <LibraryItem Name="Standard.IoModbusSlave" Version="21.2.0.16" />
+        <LibraryItem Name="Standard.OPCUAClient" Version="21.2.0.11" />
+        <LibraryItem Name="IEC61131.Standard" Version="21.2.0.1" />
+        <LibraryItem Name="SE.AppAsset" Version="21.2.0.9" />
+        <LibraryItem Name="SE.AppFunctional" Version="21.2.0.9" />
+        <DeviceItem ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" Hash="175B7376BE649137E" />
+      </FileGroup>
+      <Device Name="EcoRT_0" ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" xmlns="http://tempuri.org/DeploySnapshot.xsd">
+        <FileItem Name="Basics/Main#ADD_3514EB543E3A8D7A.bin" />
+        <FileItem Name="Basics/Main#ADD_1990CFD1468AAE4A6.bin" />
+        <FileItem Name="Basics/Main#StartStopEvents.bin" />
+        <FileItem Name="Basics/Main#StartStop.bin" />
+        <FileItem Name="Basics/SE.DPAC#DS_SELECTX_2536758B411A6CE51.bin" />
+        <FileItem Name="Composites/SE.DPAC#DPAC_FULLINIT.bin" />
+        <FileItem Name="Composites/SE.AppBase#plcStart.bin" />
+        <FileItem Name="Basics/Main#AND_88A3DD8EC65DD11C.bin" />
+        <FileItem Name="Composites/Main#ComposStartStop.bin" />
+      </Device>
+    </DeployInformation>
   </snapshot>
   <deployment>
     <network_profile name="(Local Test)">
       <device id="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687">
-        <sref snapshot="{A35636A9-5E6E-44EE-87CF-E81A47DC9562}" state="ACTIVE_MODIFIED" />
+        <sref snapshot="{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}" state="ACTIVE" />
       </device>
     </network_profile>
   </deployment>

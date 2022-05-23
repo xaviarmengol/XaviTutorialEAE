@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="48261943-5ce7-4ccd-81b7-e0005d5b10ee" Name="ComposStartStop" Comment="Composite Function Block Type" Namespace="Main">
+  <Attribute Name="Configuration.FB.IDCounter" Value="3" />
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Admin" Date="18/05/2022" Remarks="template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request">
+        <With Var="Enclavamiento" />
+        <With Var="Start" />
+        <With Var="Stop" />
+        <With Var="Reverse" />
+      </Event>
+      <Event Name="REQ" Comment="Normal Execution Request">
+        <With Var="Enclavamiento" />
+        <With Var="Start" />
+        <With Var="Stop" />
+        <With Var="Reverse" />
+      </Event>
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" Comment="Initialization Confirm">
+        <With Var="SalidaMotor" />
+      </Event>
+      <Event Name="CNF" Comment="Execution Confirmation">
+        <With Var="SalidaMotor" />
+      </Event>
+    </EventOutputs>
+    <InputVars>
+      <VarDeclaration Name="Enclavamiento" Type="BOOL" Comment="Input event qualifier" />
+      <VarDeclaration Name="Start" Type="BOOL" />
+      <VarDeclaration Name="Stop" Type="BOOL" />
+      <VarDeclaration Name="Reverse" Type="BOOL" />
+    </InputVars>
+    <OutputVars>
+      <VarDeclaration Name="SalidaMotor" Type="BOOL" Comment="Output event qualifier" />
+    </OutputVars>
+  </InterfaceList>
+  <FBNetwork>
+    <FB ID="1" Name="Motor1" Type="StartStop" x="800" y="900" Namespace="Main" />
+    <FB ID="3" Name="FB1" Type="AND_88A3DD8EC65DD11C" x="1820" y="960" Namespace="Main">
+      <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=2;OUT:BOOL" />
+    </FB>
+    <Input Name="INIT" x="20" y="912" Type="Event" />
+    <Input Name="REQ" x="20" y="972" Type="Event" />
+    <Input Name="Enclavamiento" x="40" y="1532" Type="Data" />
+    <Input Name="Start" x="20" y="1172" Type="Data" />
+    <Input Name="Stop" x="20" y="1232" Type="Data" />
+    <Input Name="Reverse" x="20" y="1292" Type="Data" />
+    <Output Name="INITO" x="2520" y="912" Type="Event" />
+    <Output Name="CNF" x="2520" y="972" Type="Event" />
+    <Output Name="SalidaMotor" x="2420" y="1192" Type="Data" />
+    <EventConnections>
+      <Connection Source="INIT" Destination="Motor1.INIT" />
+      <Connection Source="REQ" Destination="Motor1.REQ" />
+      <Connection Source="Motor1.INITO" Destination="INITO">
+        <Points>
+          <Points>
+            <X>316.8177</X>
+            <Y>235</Y>
+          </Points>
+          <Points>
+            <X>327.5</X>
+            <Y>235</Y>
+          </Points>
+          <Points>
+            <X>327.5</X>
+            <Y>222.5</Y>
+          </Points>
+          <Points>
+            <X>547.5</X>
+            <Y>222.5</Y>
+          </Points>
+          <Points>
+            <X>547.5</X>
+            <Y>235</Y>
+          </Points>
+          <Points>
+            <X>630</X>
+            <Y>235</Y>
+          </Points>
+        </Points>
+      </Connection>
+      <Connection Source="FB1.CNF" Destination="CNF" />
+      <Connection Source="Motor1.CNF" Destination="FB1.REQ" />
+    </EventConnections>
+    <DataConnections>
+      <Connection Source="Motor1.StateOut" Destination="FB1.IN1" />
+      <Connection Source="Enclavamiento" Destination="FB1.IN2" dx1="679.8959" />
+      <Connection Source="FB1.OUT" Destination="SalidaMotor" dx1="47.47925" />
+      <Connection Source="Start" Destination="Motor1.Start" />
+      <Connection Source="Stop" Destination="Motor1.Stop" />
+      <Connection Source="Reverse" Destination="Motor1.Reverse" />
+    </DataConnections>
+  </FBNetwork>
+</FBType>
