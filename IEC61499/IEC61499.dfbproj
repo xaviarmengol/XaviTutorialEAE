@@ -110,6 +110,7 @@
     <None Include="IEC61499.iecproj" />
     <none Include="Languages\neutral\Dictionary.Resources.xml" />
     <None Include="Project.doc.xml" />
+    <None Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\IEC61499.snapshot" />
     <None Include="SnapshotCompiles\{D50A49BD-0D83-401F-B869-086C9AA143FD}\Default\IEC61499.snapshot" />
     <None Include="SubApp1.app">
       <IEC61499Type>SubApp</IEC61499Type>
@@ -192,6 +193,22 @@
     <Folder Include="License" />
     <Folder Include="Log" />
     <Folder Include="SnapshotCompiles" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{09051D57-BDF3-401F-8976-969083372FF4}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{103400E9-6FDD-44F1-A97E-691131111FAA}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{16A43069-EED1-4D56-845D-3AD80FA10C76}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{72685279-707E-4EE6-905D-2E19C04DDA08}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{85B69655-1E02-4E3A-9B51-3E7C8AEC4136}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{A44E1983-7039-4E52-9BAA-135C8909CBAC}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{B7026FC7-BD27-4E54-A0F9-B43CA357F958}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{C3993FF5-01A7-46AF-8905-AC275B8761C7}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{D2D728B7-F32B-4F19-A298-00C7B0BF6A3B}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{DC3B2DA9-CBF2-41A1-9CDD-FD8FC1A513E9}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{DF877BD0-F217-44C4-AE38-041491CE8D9A}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{E4FAA43D-C1DB-4163-9583-6FF071084A37}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{E8C646F2-82CB-4F5B-AE8E-3E8D90AA9E33}" />
+    <Folder Include="SnapshotCompiles\{B15DAAC0-7A7A-4CAA-B9CC-9C17FC70F97B}\Default\{E9ACBE1F-E459-4CE8-8B02-F72B6445ACA2}" />
     <Folder Include="SnapshotCompiles\{D50A49BD-0D83-401F-B869-086C9AA143FD}" />
     <Folder Include="SnapshotCompiles\{D50A49BD-0D83-401F-B869-086C9AA143FD}\Default" />
     <Folder Include="SnapshotCompiles\{D50A49BD-0D83-401F-B869-086C9AA143FD}\Default\{09051D57-BDF3-401F-8976-969083372FF4}" />
