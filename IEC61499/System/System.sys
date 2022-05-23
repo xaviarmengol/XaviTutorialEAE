@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE System SYSTEM "../LibraryElement.dtd">
+<System Name="System" Comment="System Configuration">
+  <Attribute Name="System.Device.FolderPath" Value="EcoRT_0,DEV" />
+  <Identification Standard="61499-1" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Admin" Date="18/05/2022" />
+  <Application ID="B2C372D51361FB5D" Name="APP1">
+    <SubAppNetwork>
+      <FB ID="3F8AC50D98D042E2" UID="E41079677A962504" Name="FB1" Type="ADD_3514EB543E3A8D7A" x="920" y="120" Namespace="Main">
+        <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=5;IN${CNT}:INT" />
+        <Parameter Name="IN1" Value="1" />
+        <Parameter Name="IN2" Value="1" />
+        <Parameter Name="IN3" Value="1" />
+        <Parameter Name="IN4" Value="1" />
+        <Parameter Name="IN5" Value="1" />
+      </FB>
+      <FB ID="7D2ACF0276200997" UID="7CE2BE5FD1562F0A" Name="FB2" Type="ADD_1990CFD1468AAE4A6" x="2020" y="140" Namespace="Main">
+        <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=2;IN${CNT}:LREAL" />
+      </FB>
+      <FB ID="622C683820091413" Name="FB3" Type="StartStop" x="3540" y="1000" Namespace="Main">
+        <Parameter Name="Start" Value="TRUE" />
+        <Parameter Name="Stop" Value="FALSE" />
+        <Parameter Name="Reverse" Value="FALSE" />
+      </FB>
+      <FB ID="A2A6C3984336CB3B" Name="FB4" Type="StartStopEvents" x="2160" y="1020" Namespace="Main" />
+      <FB ID="998934A1E746065B" Name="FB5" Type="plcStart" x="820" y="1060" Namespace="SE.AppBase">
+        <Parameter Name="Prio" Value="100" />
+      </FB>
+      <EventConnections>
+        <Connection Source="FB1.CNF" Destination="FB2.REQ" dx1="67.47925" />
+        <Connection Source="FB5.FIRST_INIT" Destination="FB4.INIT" dx1="48.08337" />
+        <Connection Source="FB4.INITO" Destination="FB3.INIT" dx1="45.77075" />
+        <Connection Source="FB3.INITO" Destination="FB5.ACK_FIRST" dx1="42.729" dx2="50" dy="-110" />
+      </EventConnections>
+      <DataConnections>
+        <Connection Source="FB1.OUT" Destination="FB2.IN1" dx1="47.47925" />
+        <Connection Source="FB1.OUT" Destination="FB2.IN2" dx1="47.47925" />
+      </DataConnections>
+    </SubAppNetwork>
+  </Application>
+  <Device ID="4B8C7E7B-159D-4E9D-A511-AE6D09D1E687" Name="EcoRT_0" Type="Soft_dPAC" x="700" y="700" Namespace="SE.DPAC">
+    <Resource ID="C117479D944FBB80" Name="RES0" Type="EMB_RES_ECO" x="800" y="800" Namespace="Runtime.Management">
+      <FBNetwork>
+        <FB ID="57317D07E82CB4F3" Name="FB1" Type="ADD_3514EB543E3A8D7A" x="1320" y="600" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=5;IN${CNT}:INT" />
+          <Parameter Name="IN1" Value="1" />
+          <Parameter Name="IN2" Value="1" />
+          <Parameter Name="IN3" Value="1" />
+          <Parameter Name="IN4" Value="1" />
+          <Parameter Name="IN5" Value="1" />
+        </FB>
+        <FB ID="606B48296FA526E9" Name="FB2" Type="ADD_1990CFD1468AAE4A6" x="2460" y="560" Namespace="Main">
+          <Attribute Name="Configuration.GenericFBType.InterfaceParams" Value="Runtime.Standard#CNT:=2;IN${CNT}:LREAL" />
+        </FB>
+        <FB ID="790CAB0F21A4B162" Name="FB4" Type="StartStopEvents" x="2560" y="1140" Namespace="Main" />
+        <FB ID="F204BADE9F1E2473" Name="FB3" Type="StartStop" x="3160" y="120" Namespace="Main">
+          <Parameter Name="Stop" Value="FALSE" />
+          <Parameter Name="Reverse" Value="FALSE" />
+          <Parameter Name="Start" Value="TRUE" />
+        </FB>
+        <FB ID="2AD6F240C6722FDD" Name="FB5" Type="DPAC_FULLINIT" x="960" y="60" Namespace="SE.DPAC" Loaded="true" />
+        <FB ID="B26CA2A20C3EF095" Name="FB0" Type="plcStart" x="820" y="1060" Namespace="SE.AppBase">
+          <Parameter Name="Prio" Value="100" />
+        </FB>
+        <EventConnections>
+          <Connection Source="START.COLD" Destination="FB1.REQ" dx1="88.60419" />
+          <Connection Source="START.WARM" Destination="FB1.REQ" dx1="68.60419" />
+          <Connection Source="START.ONLINECHANGE" Destination="FB1.REQ" dx1="48.60419" />
+          <Connection Source="FB1.CNF" Destination="FB2.REQ" dx1="50" />
+          <Connection Source="START.COLD" Destination="FB5.INIT" dx1="50" />
+          <Connection Source="START.WARM" Destination="FB5.INIT" dx1="70" />
+          <Connection Source="START.ONLINECHANGE" Destination="FB5.OC_RETRIGGER" dx1="90" />
+          <Connection Source="FB4.INITO" Destination="FB3.INIT" dx1="45.771" dx2="30" dy="-110" />
+          <Connection Source="FB0.FIRST_INIT" Destination="FB4.INIT" dx1="268.0834" />
+          <Connection Source="FB3.INITO" Destination="FB0.ACK_FIRST">
+            <Points>
+              <Points>
+                <X>906.8177</X>
+                <Y>40</Y>
+              </Points>
+              <Points>
+                <X>912.499939</X>
+                <Y>40</Y>
+              </Points>
+              <Points>
+                <X>912.499939</X>
+                <Y>12</Y>
+              </Points>
+              <Points>
+                <X>772.499939</X>
+                <Y>12</Y>
+              </Points>
+              <Points>
+                <X>772.499939</X>
+                <Y>97</Y>
+              </Points>
+              <Points>
+                <X>182.499939</X>
+                <Y>97</Y>
+              </Points>
+              <Points>
+                <X>182.499939</X>
+                <Y>275</Y>
+              </Points>
+              <Points>
+                <X>200</X>
+                <Y>275</Y>
+              </Points>
+            </Points>
+            <AvoidsNodes>false</AvoidsNodes>
+          </Connection>
+        </EventConnections>
+        <DataConnections>
+          <Connection Source="FB1.OUT" Destination="FB2.IN1" dx1="70" />
+          <Connection Source="FB1.OUT" Destination="FB2.IN2" dx1="47.47925" />
+        </DataConnections>
+      </FBNetwork>
+    </Resource>
+    <FBNetwork />
+  </Device>
+  <Device ID="22ef0c64-e402-45d3-8089-d16441c69f28" Name="DEV" Type="M580_dPAC" x="542.3646" y="1280" Namespace="SE.DPAC">
+    <Resource ID="E598FB4EB9D59651" Name="RES0" Type="EMB_RES_ECO" Namespace="Runtime.Management">
+      <FBNetwork />
+    </Resource>
+    <FBNetwork />
+  </Device>
+  <Mapping From="APP1.FB1" To="EcoRT_0.RES0" />
+  <Mapping From="APP1.FB2" To="EcoRT_0.RES0" />
+  <Mapping From="APP1.FB4" To="EcoRT_0.RES0" />
+  <Mapping From="APP1.FB3" To="EcoRT_0.RES0" />
+  <Mapping From="APP1.FB5" To="EcoRT_0.RES0.FB0" />
+</System>

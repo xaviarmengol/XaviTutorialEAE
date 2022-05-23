@@ -1,0 +1,8 @@
+HMI/bin
+HMI/obj
+IEC61499/bin
+IEC61499/obj
+IEC61499/SnapshotCompiles
+*.dll
+*.csproj
+*.cs

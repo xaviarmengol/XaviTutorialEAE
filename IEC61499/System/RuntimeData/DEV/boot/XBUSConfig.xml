@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<XBUS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MASTER name="XBUSConfig" bus_weight="50" ErrorHaltOnBusCycleJitter="true">
+    <TASK name="t1" slice="0">
+      <LN nr="0" />
+      <LN nr="0" />
+      <LN nr="0" />
+      <LN nr="0" />
+    </TASK>
+  </MASTER>
+  <MODULE devEnum="1" typename="BMXDAI1604" rack="0" slot="3" vendor="Schneider Automation" powerConsumption="0.5" nominal3v3CurrentConsumption="0.072" nominal24VRCurrentConsumption="0.1" weight="0.375" lncnt="1" nbAnalogChn="0" nbDiscreteChn="8">
+    <LND nr="0" vi="8" type="1" fbmask="3" size_pdi="3" size_pdo="0" nb_fb="2" fbctrl="02000200" fbstatus_size="4" promptness="8" />
+    <MODID productRange="6" equipmentClass="2" communicationClass="0" productType="2" catalogRef="3" channelFault="3" moduleVersion="16" />
+    <CHANNEL name="Channel 0-7" nr="0" ln="0">
+      <CHNCFG value="0100000000" />
+    </CHANNEL>
+  </MODULE>
+  <MODULE devEnum="2" typename="BMXDAO1605" rack="0" slot="2" vendor="Schneider Automation" powerConsumption="2.4" nominal3v3CurrentConsumption="0.1" nominal24VRCurrentConsumption="0.085" weight="0.75" lncnt="1" nbAnalogChn="0" nbDiscreteChn="16">
+    <LND nr="0" vi="8" type="1" fbmask="3" size_pdi="6" size_pdo="4" nb_fb="2" fbctrl="02000200" fbstatus_size="4" promptness="8" />
+    <MODID productRange="6" equipmentClass="2" communicationClass="0" productType="2" catalogRef="51" channelFault="3" moduleVersion="16" />
+    <CHANNEL name="Channel 0-7" nr="0" ln="0">
+      <CHNCFG value="36000000FF" />
+    </CHANNEL>
+    <CHANNEL name="Channel 8-15" nr="1" ln="0">
+      <CHNCFG value="36000000FF" />
+    </CHANNEL>
+  </MODULE>
+  <CPU devEnum="0" typename="BMED581020" rack="0" slot="0" vendor="Schneider Automation" powerConsumption="7.2" nominal3v3CurrentConsumption="0" nominal24VRCurrentConsumption="0.3" size_pdi="6" maxAuthDiscreteIO="320" maxAuthAnalogIO="64" maxAuthRack="4" />
+  <POWERSUPPLY devEnum="0" typename="BMXCPS2000" rack="0" maxPowerConsumption="20" max3v3NominalCurrentConsumption="2.5" max24VRNominalCurrentConsumption="0.7" authRack02="false" />
+</XBUS>

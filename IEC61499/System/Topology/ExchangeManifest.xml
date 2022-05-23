@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExchangeVersions>
+  <SoftdpacEquipment>1.0</SoftdpacEquipment>
+  <DockerContainer>1.1</DockerContainer>
+  <SoftdpacEthernet>1.0</SoftdpacEthernet>
+  <SoftdpacManager>1.1</SoftdpacManager>
+  <Runtime>1.1</Runtime>
+  <Rstp>1.0</Rstp>
+  <Wire>1.0</Wire>
+  <BroadcastDomain>1.1</BroadcastDomain>
+  <Ethernet>1.0</Ethernet>
+  <PhysicalView>1.0</PhysicalView>
+  <Equipment>1.0</Equipment>
+</ExchangeVersions>

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F6877457-0F12-4FF5-AEBD-5E90C3DF3F4C}</ProjectGuid>
+    <ProjectTypeGuids>{EAD1E85F-CEF5-4861-AFF8-597F2DDE70FC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">Windows</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Main</RootNamespace>
+    <AssemblyName>IEC61499</AssemblyName>
+    <NxtVersion>21.2.0.0</NxtVersion>
+    <CheckConnectionsStrictly>TRUE</CheckConnectionsStrictly>
+    <CreateHMI>false</CreateHMI>
+    <HMIProject>HMI</HMIProject>
+    <CATInstancesHaveIds>true</CATInstancesHaveIds>
+    <ProjectType>IEC61499</ProjectType>
+    <CheckGenericInstances>False</CheckGenericInstances>
+    <ConvertStringValues>False</ConvertStringValues>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'Windows' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Default\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <IntermediateOutputPath>obj\Default\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Default\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <IntermediateOutputPath>obj\Default\</IntermediateOutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Windows' ">
+    <Version>1.0</Version>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Runtime.Base">
+      <Version>21.2.0.17</Version>
+    </Reference>
+    <Reference Include="SE.AppBase">
+      <Version>21.2.0.9</Version>
+    </Reference>
+    <Reference Include="SE.AppCommonProcess">
+      <Version>21.2.0.9</Version>
+    </Reference>
+    <Reference Include="SE.AppConveying">
+      <Version>21.2.0.9</Version>
+    </Reference>
+    <Reference Include="SE.AppLiquidFood">
+      <Version>21.2.0.9</Version>
+    </Reference>
+    <Reference Include="SE.AppSequence">
+      <Version>21.2.0.9</Version>
+    </Reference>
+    <Reference Include="SE.AppStateManagement">
+      <Version>21.2.0.9</Version>
+    </Reference>
+    <Reference Include="SE.DPAC">
+      <Version>21.2.0.32</Version>
+    </Reference>
+    <Reference Include="SE.FieldDevice">
+      <Version>21.2.0.30</Version>
+    </Reference>
+    <Reference Include="SE.HwCommon">
+      <Version>21.2.0.17</Version>
+    </Reference>
+    <Reference Include="SE.IoATV">
+      <Version>21.2.0.31</Version>
+    </Reference>
+    <Reference Include="SE.IoNet">
+      <Version>21.2.0.3</Version>
+    </Reference>
+    <Reference Include="SE.IoTMx">
+      <Version>21.2.0.19</Version>
+    </Reference>
+    <Reference Include="SE.IoX80">
+      <Version>21.2.0.20</Version>
+    </Reference>
+    <Reference Include="SE.ModbusGateway">
+      <Version>21.2.0.12</Version>
+    </Reference>
+    <Reference Include="SE.Standard">
+      <Version>21.2.0.4</Version>
+    </Reference>
+    <Reference Include="Standard.HMIExtensions">
+      <Version>21.2.0.1</Version>
+    </Reference>
+    <Reference Include="Standard.IoEtherNetIP">
+      <Version>21.2.0.13</Version>
+    </Reference>
+    <Reference Include="Standard.IoModbus">
+      <Version>21.2.0.17</Version>
+    </Reference>
+    <Reference Include="Standard.IoModbusSlave">
+      <Version>21.2.0.16</Version>
+    </Reference>
+    <Reference Include="Standard.OPCUAClient">
+      <Version>21.2.0.11</Version>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Configuration\Certificates\Certificates.xml" />
+    <None Include="IEC61499.iecproj" />
+    <none Include="Languages\neutral\Dictionary.Resources.xml" />
+    <None Include="Project.doc.xml" />
+    <None Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\IEC61499.snapshot" />
+    <None Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\IEC61499.snapshot" />
+    <None Include="SubApp1.app">
+      <IEC61499Type>SubApp</IEC61499Type>
+    </None>
+    <None Include="System\22ef0c64-e402-45d3-8089-d16441c69f28.hcf">
+      <DependentUpon>System.sys</DependentUpon>
+      <IEC61499Type>System</IEC61499Type>
+    </None>
+    <None Include="System\snapshot.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\System.cfg">
+      <DependentUpon>System.sys</DependentUpon>
+      <IEC61499Type>System</IEC61499Type>
+    </None>
+    <None Include="System\System.Device.Properties.xml">
+      <DependentUpon>System.sys</DependentUpon>
+      <IEC61499Type>System</IEC61499Type>
+    </None>
+    <None Include="System\System.Topology.Binding.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\BroadcastDomain.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\DockerContainer.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\Equipment.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\Ethernet.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\ExchangeManifest.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\PhysicalView.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\Rstp.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\Runtime.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\SoftdpacEquipment.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\SoftdpacEthernet.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\SoftdpacManager.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+    <None Include="System\Topology\Wire.xml">
+      <DependentUpon>System.sys</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdapterTest.adp">
+      <IEC61499Type>Adapter</IEC61499Type>
+    </Compile>
+    <Compile Include="Composite1.fbt">
+      <IEC61499Type>Composite</IEC61499Type>
+    </Compile>
+    <Compile Include="StartStop.fbt">
+      <IEC61499Type>Basic</IEC61499Type>
+    </Compile>
+    <Compile Include="StartStopEvents.fbt">
+      <IEC61499Type>Basic</IEC61499Type>
+    </Compile>
+    <Compile Include="System\System.sys">
+      <IEC61499Type>System</IEC61499Type>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Configuration" />
+    <Folder Include="Configuration\Certificates" />
+    <Folder Include="License" />
+    <Folder Include="Log" />
+    <Folder Include="SnapshotCompiles" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{09051D57-BDF3-401F-8976-969083372FF4}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{103400E9-6FDD-44F1-A97E-691131111FAA}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{16A43069-EED1-4D56-845D-3AD80FA10C76}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{72685279-707E-4EE6-905D-2E19C04DDA08}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{85B69655-1E02-4E3A-9B51-3E7C8AEC4136}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{A44E1983-7039-4E52-9BAA-135C8909CBAC}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{B7026FC7-BD27-4E54-A0F9-B43CA357F958}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{C3993FF5-01A7-46AF-8905-AC275B8761C7}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{D2D728B7-F32B-4F19-A298-00C7B0BF6A3B}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{DC3B2DA9-CBF2-41A1-9CDD-FD8FC1A513E9}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{DF877BD0-F217-44C4-AE38-041491CE8D9A}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{E4FAA43D-C1DB-4163-9583-6FF071084A37}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{E8C646F2-82CB-4F5B-AE8E-3E8D90AA9E33}" />
+    <Folder Include="SnapshotCompiles\{A35636A9-5E6E-44EE-87CF-E81A47DC9562}\Default\{E9ACBE1F-E459-4CE8-8B02-F72B6445ACA2}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{09051D57-BDF3-401F-8976-969083372FF4}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{103400E9-6FDD-44F1-A97E-691131111FAA}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{16A43069-EED1-4D56-845D-3AD80FA10C76}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{72685279-707E-4EE6-905D-2E19C04DDA08}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{85B69655-1E02-4E3A-9B51-3E7C8AEC4136}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{A44E1983-7039-4E52-9BAA-135C8909CBAC}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{B7026FC7-BD27-4E54-A0F9-B43CA357F958}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{C3993FF5-01A7-46AF-8905-AC275B8761C7}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{D2D728B7-F32B-4F19-A298-00C7B0BF6A3B}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{DC3B2DA9-CBF2-41A1-9CDD-FD8FC1A513E9}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{DF877BD0-F217-44C4-AE38-041491CE8D9A}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{E4FAA43D-C1DB-4163-9583-6FF071084A37}" />
+    <Folder Include="SnapshotCompiles\{B150DF40-4481-441F-9240-02F4B025CADA}\Default\{E8C646F2-82CB-4F5B-AE8E-3E8D90AA9E33}" />
+    <Folder Include="System\Topology">
+      <DependentUpon>System.sys</DependentUpon>
+    </Folder>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="System\System.opcua.xml">
+      <DependentUpon>System.sys</DependentUpon>
+      <Plugin>OPCUAConfigurator</Plugin>
+      <IEC61499Type>CAT_OPCUA</IEC61499Type>
+    </Content>
+    <Content Include="System\System.symlink.xml" />
+  </ItemGroup>
+  <Import Project="$(SharpDevelopBinPath)\NxtControl.Build.61499.Targets" />
+</Project>

@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeviceHwConfigurationItems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DeviceHwConfigurationItem ResourceId="E598FB4EB9D59651">
+    <ConfigurationBaseItem>
+      <Name>BMXBUS</Name>
+      <ID>776F91BB14B7C301</ID>
+      <Type>
+        <Name>BMXBUS</Name>
+        <Namespace>SE.IoX80</Namespace>
+      </Type>
+      <ItemProperties>
+        <ItemProperty>
+          <Name>busid</Name>
+          <Value xsi:type="xsd:string">XBUSConfig</Value>
+        </ItemProperty>
+        <ItemProperty>
+          <Name>bus_cycle</Name>
+          <Value xsi:type="xsd:unsignedShort">50</Value>
+        </ItemProperty>
+        <ItemProperty>
+          <Name>ErrorHaltOnBusCycleJitter</Name>
+          <Value xsi:type="xsd:boolean">true</Value>
+        </ItemProperty>
+      </ItemProperties>
+      <ParameterValues />
+      <MasterConfigFileName>${ProjectDir}\${SystemName}\RuntimeData\${DeviceName}\boot\${busid}.xml</MasterConfigFileName>
+      <Items>
+        <ConfigurationBaseItem>
+          <Name>BMEXBP0400</Name>
+          <ID>7A239091AEA11F56</ID>
+          <Type>
+            <Name>BMEXBP0400</Name>
+            <Namespace>SE.IoX80</Namespace>
+          </Type>
+          <ItemProperties>
+            <ItemProperty>
+              <Name>rackAdr</Name>
+              <Value xsi:type="xsd:unsignedByte">0</Value>
+            </ItemProperty>
+            <ItemProperty>
+              <Name>Capacity</Name>
+              <Value xsi:type="xsd:unsignedByte">4</Value>
+            </ItemProperty>
+            <ItemProperty>
+              <Name>powerConsumption</Name>
+              <Value xsi:type="xsd:double">6.9</Value>
+            </ItemProperty>
+            <ItemProperty>
+              <Name>nominal3v3CurrentConsumption</Name>
+              <Value xsi:type="xsd:double">0.049</Value>
+            </ItemProperty>
+            <ItemProperty>
+              <Name>nominal24VRCurrentConsumption</Name>
+              <Value xsi:type="xsd:double">0.118</Value>
+            </ItemProperty>
+          </ItemProperties>
+          <ParameterValues />
+          <PreviousItem>
+            <Name>BMXBUS</Name>
+            <PortName>busOut</PortName>
+          </PreviousItem>
+          <Items>
+            <ConfigurationBaseItem>
+              <Name>BMED581020</Name>
+              <ID>14730987B121A077</ID>
+              <Type>
+                <Name>BMED581020</Name>
+                <Namespace>SE.IoX80</Namespace>
+              </Type>
+              <ItemProperties>
+                <ItemProperty>
+                  <Name>size_pdi</Name>
+                  <Value xsi:type="xsd:unsignedByte">6</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>maxAuthDiscreteIO</Name>
+                  <Value xsi:type="xsd:int">320</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>maxAuthAnalogIO</Name>
+                  <Value xsi:type="xsd:int">64</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>maxAuthRack</Name>
+                  <Value xsi:type="xsd:unsignedByte">4</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>powerConsumption</Name>
+                  <Value xsi:type="xsd:double">7.2</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>nominal3v3CurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>nominal24VRCurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">0.3</Value>
+                </ItemProperty>
+              </ItemProperties>
+              <ParameterValues />
+              <PreviousItem>
+                <Name>BMEXBP0400</Name>
+                <PortName>busOut</PortName>
+              </PreviousItem>
+              <Items />
+            </ConfigurationBaseItem>
+            <ConfigurationBaseItem>
+              <Name>BMXCPS2000</Name>
+              <ID>44027A313ACB79A0</ID>
+              <Type>
+                <Name>BMXCPS2000</Name>
+                <Namespace>SE.IoX80</Namespace>
+              </Type>
+              <ItemProperties>
+                <ItemProperty>
+                  <Name>maxPowerConsumption</Name>
+                  <Value xsi:type="xsd:double">20</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>max3v3NominalCurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">2.5</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>max24VRNominalCurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">0.7</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>authRack02</Name>
+                  <Value xsi:type="xsd:boolean">false</Value>
+                </ItemProperty>
+              </ItemProperties>
+              <ParameterValues />
+              <PreviousItem>
+                <Name>BMED581020</Name>
+                <PortName>busOut</PortName>
+              </PreviousItem>
+              <Items />
+            </ConfigurationBaseItem>
+            <ConfigurationBaseItem>
+              <Name>BMXDAI0814</Name>
+              <ID>4CEBC66BFC0688B0</ID>
+              <Type>
+                <Name>BMXDAI0814</Name>
+                <Namespace>SE.IoX80</Namespace>
+              </Type>
+              <ItemProperties>
+                <ItemProperty>
+                  <Name>SlotNr</Name>
+                  <Value xsi:type="xsd:unsignedByte">3</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>Promptness</Name>
+                  <Value xsi:type="xsd:unsignedByte">4</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>powerConsumption</Name>
+                  <Value xsi:type="xsd:double">0.5</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>nominal3v3CurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">0.072</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>nominal24VRCurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">0.1</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>SupplyMonitoring</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+              </ItemProperties>
+              <ParameterValues>
+                <ParameterValue Name="DI00" Value="''" />
+                <ParameterValue Name="DI01" Value="''" />
+                <ParameterValue Name="DI02" Value="''" />
+                <ParameterValue Name="DI03" Value="''" />
+                <ParameterValue Name="DI04" Value="''" />
+                <ParameterValue Name="DI05" Value="''" />
+                <ParameterValue Name="DI06" Value="''" />
+                <ParameterValue Name="DI07" Value="''" />
+              </ParameterValues>
+              <MasterConfigFileName />
+              <PreviousItem>
+                <Name>BMXCPS2000</Name>
+                <PortName>busOut</PortName>
+              </PreviousItem>
+              <Items />
+            </ConfigurationBaseItem>
+            <ConfigurationBaseItem>
+              <Name>BMXDAO1605</Name>
+              <ID>4FA22D89C4DF464F</ID>
+              <Type>
+                <Name>BMXDAO1605</Name>
+                <Namespace>SE.IoX80</Namespace>
+              </Type>
+              <ItemProperties>
+                <ItemProperty>
+                  <Name>SlotNr</Name>
+                  <Value xsi:type="xsd:unsignedByte">2</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>Promptness</Name>
+                  <Value xsi:type="xsd:unsignedByte">4</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>powerConsumption</Name>
+                  <Value xsi:type="xsd:double">2.4</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>nominal3v3CurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">0.1</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>nominal24VRCurrentConsumption</Name>
+                  <Value xsi:type="xsd:double">0.085</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>SupplyMonitoring</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>OutputProtection</Name>
+                  <Value xsi:type="xsd:unsignedByte">1</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>ReactivateOutputs0to7</Name>
+                  <Value xsi:type="xsd:unsignedByte">1</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>ReactivateOutputs8to15</Name>
+                  <Value xsi:type="xsd:unsignedByte">1</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackMode</Name>
+                  <Value xsi:type="xsd:unsignedByte">1</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch0</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch1</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch2</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch3</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch4</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch5</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch6</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch0to7.FallbackValue_Ch7</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackMode</Name>
+                  <Value xsi:type="xsd:unsignedByte">1</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch8</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch9</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch10</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch11</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch12</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch13</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch14</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+                <ItemProperty>
+                  <Name>FallbackSettings_Ch8to15.FallbackValue_Ch15</Name>
+                  <Value xsi:type="xsd:unsignedByte">0</Value>
+                </ItemProperty>
+              </ItemProperties>
+              <ParameterValues>
+                <ParameterValue Name="DO00" Value="''" />
+                <ParameterValue Name="DO01" Value="''" />
+                <ParameterValue Name="DO02" Value="''" />
+                <ParameterValue Name="DO03" Value="''" />
+                <ParameterValue Name="DO04" Value="''" />
+                <ParameterValue Name="DO05" Value="''" />
+                <ParameterValue Name="DO06" Value="''" />
+                <ParameterValue Name="DO07" Value="''" />
+                <ParameterValue Name="DO08" Value="''" />
+                <ParameterValue Name="DO09" Value="''" />
+                <ParameterValue Name="DO10" Value="''" />
+                <ParameterValue Name="DO11" Value="''" />
+                <ParameterValue Name="DO12" Value="''" />
+                <ParameterValue Name="DO13" Value="''" />
+                <ParameterValue Name="DO14" Value="''" />
+                <ParameterValue Name="DO15" Value="''" />
+                <ParameterValue Name="VALUE" Value="''" />
+                <ParameterValue Name="DO00_Status" Value="''" />
+                <ParameterValue Name="DO01_Status" Value="''" />
+                <ParameterValue Name="DO02_Status" Value="''" />
+                <ParameterValue Name="DO03_Status" Value="''" />
+                <ParameterValue Name="DO04_Status" Value="''" />
+                <ParameterValue Name="DO05_Status" Value="''" />
+                <ParameterValue Name="DO06_Status" Value="''" />
+                <ParameterValue Name="DO07_Status" Value="''" />
+                <ParameterValue Name="DO08_Status" Value="''" />
+                <ParameterValue Name="DO09_Status" Value="''" />
+                <ParameterValue Name="DO10_Status" Value="''" />
+                <ParameterValue Name="DO11_Status" Value="''" />
+                <ParameterValue Name="DO12_Status" Value="''" />
+                <ParameterValue Name="DO13_Status" Value="''" />
+                <ParameterValue Name="DO14_Status" Value="''" />
+                <ParameterValue Name="DO15_Status" Value="''" />
+              </ParameterValues>
+              <MasterConfigFileName />
+              <PreviousItem>
+                <Name>BMXDAI0814</Name>
+                <PortName>busOut</PortName>
+              </PreviousItem>
+              <Items />
+            </ConfigurationBaseItem>
+          </Items>
+        </ConfigurationBaseItem>
+      </Items>
+    </ConfigurationBaseItem>
+  </DeviceHwConfigurationItem>
+</DeviceHwConfigurationItems>

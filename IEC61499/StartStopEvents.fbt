@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE FBType SYSTEM "../LibraryElement.dtd">
+<FBType GUID="a8023a32-0c3c-44e4-9fe5-6ee456a67952" Name="StartStopEvents" Comment="Basic Function Block Type" Namespace="Main">
+  <Identification Standard="61499-2" />
+  <VersionInfo Organization="Schneider Electric" Version="0.0" Author="Admin" Date="18/05/2022" Remarks="Template" />
+  <InterfaceList>
+    <EventInputs>
+      <Event Name="INIT" Comment="Initialization Request" />
+      <Event Name="REQ" Comment="Normal Execution Request" />
+      <Event Name="Start" />
+      <Event Name="Stop" />
+      <Event Name="Reverse" />
+    </EventInputs>
+    <EventOutputs>
+      <Event Name="INITO" Comment="Initialization Confirm">
+        <With Var="StateDebug" />
+      </Event>
+      <Event Name="CNF" Comment="Execution Confirmation">
+        <With Var="Output" />
+        <With Var="StateDebug" />
+      </Event>
+      <Event Name="Test" />
+    </EventOutputs>
+    <OutputVars>
+      <VarDeclaration Name="Output" Type="BOOL" InitialValue="FALSE" Comment="Output event qualifier" />
+      <VarDeclaration Name="StateDebug" Type="INT" InitialValue="-99" />
+    </OutputVars>
+  </InterfaceList>
+  <BasicFB>
+    <Attribute Name="FBType.Basic.Algorithm.Order" Value="INIT,OUTPUT_TRUE,OUTPUT_FALSE" />
+    <InternalVars>
+      <VarDeclaration Name="InternalState" Type="BOOL" />
+    </InternalVars>
+    <ECC>
+      <ECState Name="START" Comment="Initial State" x="596.9412" y="441.4117" />
+      <ECState Name="INIT" Comment="Initialization" x="923.5294" y="141.1765">
+        <ECAction Algorithm="INIT" Output="INITO" />
+      </ECState>
+      <ECState Name="ACTIVE" Comment="Normal execution" x="1757.647" y="904.9412">
+        <ECAction Algorithm="OUTPUT_TRUE" Output="CNF" />
+      </ECState>
+      <ECState Name="NO_ACTIVE" x="2020" y="248">
+        <ECAction Algorithm="OUTPUT_FALSE" Output="CNF" />
+      </ECState>
+      <ECTransition Source="START" Destination="INIT" Condition="INIT" x="752.5223" y="211.35">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="181.1812,55.98481,198.9364,39.66225" />
+      </ECTransition>
+      <ECTransition Source="INIT" Destination="START" Condition="1" x="824.7133" y="348.0511">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="215.6688,82.84612,198.0413,98.83534" />
+      </ECTransition>
+      <ECTransition Source="START" Destination="ACTIVE" Condition="AND(Start, NOT(Stop))" x="1211.118" y="599.5417">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="265.9117,130.028,340.9642,160.0004" />
+      </ECTransition>
+      <ECTransition Source="ACTIVE" Destination="NO_ACTIVE" Condition="AND(OR(Reverse, Stop), InternalState)" x="1834.424" y="555.8015">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="446.3005,159.109,464.6848,115.3469" />
+      </ECTransition>
+      <ECTransition Source="NO_ACTIVE" Destination="ACTIVE" Condition="AND(AND(OR(Start, Reverse), NOT(Stop)), NOT(InternalState))" x="2977.039" y="1171.467">
+        <Attribute Name="Configuration.Transaction.BezierPoints" Value="1068.688,-61.06638,583.9042,745.1293" />
+      </ECTransition>
+    </ECC>
+    <Algorithm Name="INIT" Comment="Initialization algorithm">
+      <ST Text=";&#xD;&#xA;&#xD;&#xA;StateDebug := -10;&#xD;&#xA;" />
+    </Algorithm>
+    <Algorithm Name="OUTPUT_TRUE" Comment="Normally executed algorithm">
+      <ST Text=";&#xD;&#xA;&#xD;&#xA;Output := TRUE;&#xD;&#xA;InternalState := TRUE;&#xD;&#xA;StateDebug := 1;&#xD;&#xA;Reverse := FALSE;&#xD;&#xA;" />
+    </Algorithm>
+    <Algorithm Name="OUTPUT_FALSE">
+      <ST Text=";&#xD;&#xA;&#xD;&#xA;Output := FALSE;&#xD;&#xA;InternalState := FALSE;&#xD;&#xA;StateDebug := -1;&#xD;&#xA;Reverse := FALSE;&#xD;&#xA;" />
+    </Algorithm>
+  </BasicFB>
+</FBType>
